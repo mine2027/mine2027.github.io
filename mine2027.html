@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김강연 | 포트폴리오</title>
+  <!-- Font Awesome 아이콘 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- 분리된 외부 스타일시트 불러오기 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- 로고 -->
+      <a href="#" class="nav-logo">PORTFOLIO.</a>
+      
+      <!-- 데스크톱 메뉴 -->
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">홈</a>
+        <a href="#about" class="nav-link">소개</a>
+        <a href="#skills" class="nav-link">기술 역량</a>
+        <a href="#contact" class="nav-link">연락하기</a>
+      </div>
+      
+      <!-- 모바일 메뉴 토글 버튼 -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="메뉴 열기">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 (토글형) -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#home" class="mobile-nav-link">홈</a>
+      <a href="#about" class="mobile-nav-link">소개</a>
+      <a href="#skills" class="mobile-nav-link">기술 역량</a>
+      <a href="#contact" class="mobile-nav-link">연락하기</a>
+    </div>
+  </nav>
+
+  <!-- 홈 / 히어로 섹션 -->
+  <section id="home" class="hero-section">
+    <!-- 배경 글로우 효과 -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container hero-content">
+      <p class="hero-subtitle">Welcome to my space</p>
+      <h1 class="hero-title">
+        안녕하세요, <br class="sm:hidden">
+        <span class="hero-gradient-text">김강연</span>입니다.
+      </h1>
+      <p class="hero-desc">
+        사용자의 요구를 직관적인 디자인과 안정적인 코드로 구현하는 <strong>웹 프론트엔드 개발자</strong>입니다. 항상 배움에 열려있고 본질적인 디테일에 집중합니다.
+      </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">
+          더 알아보기 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.75rem;"></i>
+        </a>
+        <a href="#contact" class="btn-secondary">연락하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 소개 (About) 섹션 -->
+  <section id="about" class="section-padding border-top" style="background-color: rgba(15, 23, 42, 0.4);">
+    <div class="container">
+      <div class="grid-layout">
+        <!-- 왼쪽 헤더 -->
+        <div class="section-header">
+          <span class="section-tag">Philosophy</span>
+          <h2 class="section-title">지향하는 개발 방향</h2>
+        </div>
+        <!-- 오른쪽 상세 텍스트 -->
+        <div class="about-text">
+          <p class="lead">
+            "단순한 것이 정교한 것보다 더 어렵습니다. 생각을 명확히 정리하여 단순하게 만드는 데는 큰 노력이 필요합니다."
+          </p>
+          <p>
+            단순히 화면을 예쁘게 꾸미는 것을 넘어, 사용자가 마주하는 구조적 복잡함을 기술적으로 해결하는 것을 즐깁니다. 가벼운 페이지 로딩 속도, 직관적인 인터랙션, 그리고 누구나 동등하게 접근할 수 있는 웹 표준 설계를 바탕으로 코드를 작성합니다.
+          </p>
+          <p>
+            새로운 프레임워크나 라이브러리를 무작정 도입하기보다 현재 해결해야 하는 비즈니스 요구사항에 가장 적합한 도구인지 끊임없이 의심하고 분석하는 태도를 유지하고 있습니다.
+          </p>
+
+          <!-- 미니 연락 정보 표 -->
+          <div class="info-grid">
+            <div>
+              <span class="info-item-label">Email</span>
+              <span class="info-item-value">mine2027@dongyang.ac.kr</span>
+            </div>
+            <div>
+              <span class="info-item-label">Phone</span>
+              <span class="info-item-value">010-8953-4708</span>
+            </div>
+            <div>
+              <span class="info-item-label">Location</span>
+              <span class="info-item-value">Seoul, South Korea</span>
+            </div>
+            <div>
+              <span class="info-item-label">Github</span>
+              <span class="info-item-value"><a href="https://github.com/mine2027">github.com/mine2027</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기술 스택 (Skills) 섹션 -->
+  <section id="skills" class="section-padding border-top">
+    <div class="container">
+      <div class="grid-layout">
+        <!-- 왼쪽 헤더 -->
+        <div class="section-header">
+          <span class="section-tag">Stack</span>
+          <h2 class="section-title">다룰 수 있는 기술</h2>
+        </div>
+        <!-- 오른쪽 리스트 -->
+        <div class="skills-wrapper">
+          <!-- 핵심 개발 스택 -->
+          <div>
+            <h3 class="skills-group-title">Core Technologies</h3>
+            <div class="skills-tag-container">
+              <span class="skills-tag">HTML5 / CSS3</span>
+              <span class="skills-tag">React</span>
+              <span class="skills-tag">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- 도구 및 협업 스택 -->
+          <div>
+            <h3 class="skills-group-title">Tools & Engineering</h3>
+            <div class="skills-tag-container">
+              <span class="skills-tag">Git & GitHub</span>
+              <span class="skills-tag">Notion / Slack</span>
+            </div>
+          </div>
+
+          <!-- 역량 요약 -->
+          <div class="skills-summary-box">
+            <strong>어떤 기술이든 도구일 뿐입니다.</strong> 단순히 언어나 라이브러리를 사용할 줄 아는 데에 그치지 않고, 특정 기술이 등장한 역사적 배경과 필요성에 주목하여 문제를 가장 유연하고 똑똑하게 해결할 수 있는 방안을 선택하고자 늘 깊이 연구합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 (Contact) 섹션 -->
+  <section id="contact" class="section-padding border-top" style="background-color: rgba(15, 23, 42, 0.4);">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- 설명 영역 -->
+        <div class="contact-info-area">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">협업 제안하기</h2>
+          <p class="contact-info-desc">
+            프로젝트 문의, 채용 제안 등 어떠한 형태의 대화라도 좋습니다. 편하게 아래 양식을 통해 메시지를 보내주세요.
+          </p>
+        </div>
+
+        <!-- 폼 영역 -->
+        <div class="contact-form-area">
+          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group-row">
+              <div>
+                <label for="name" class="form-label">이름</label>
+                <input type="text" id="name" required class="form-input">
+              </div>
+              <div>
+                <label for="email" class="form-label">이메일</label>
+                <input type="email" id="email" required class="form-input">
+              </div>
+            </div>
+            <div>
+              <label for="message" class="form-label">메시지</label>
+              <textarea id="message" rows="4" required class="form-textarea"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">
+              전송하기 <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <!-- 커스텀 토스트 알림 피드백 -->
+          <div id="status-toast" class="toast">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div>
+              <p class="toast-title">메시지가 발송되었습니다!</p>
+              <p class="toast-desc">남겨주신 이메일로 빠르게 답변드리겠습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#" class="footer-link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="footer-link"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Gildong Hong. Crafted with absolute simplicity.</p>
+    </div>
+  </footer>
+
+  <script>
+    // 모바일 메뉴 토글 스크립트
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      const icon = mobileMenuBtn.querySelector('i');
+      if (mobileMenu.classList.contains('active')) {
+        icon.className = 'fa-solid fa-xmark';
+      } else {
+        icon.className = 'fa-solid fa-bars';
+      }
+    });
+
+    // 네비게이션 클릭 시 모바일 메뉴 자동 숨김
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        mobileMenuBtn.querySelector('i').className = 'fa-solid fa-bars';
+      });
+    });
+
+    // 가상 메시지 전송 로직
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('contact-form');
+      const toast = document.getElementById('status-toast');
+      
+      // 토스트 알림 노출 및 활성화
+      toast.classList.add('active');
+
+      // 입력 값 초기화
+      form.reset();
+
+      // 4초 후 토스트 알림 제거
+      setTimeout(() => {
+        toast.classList.remove('active');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
